@@ -826,8 +826,8 @@
   },
   {
     "name": "서울특별시 동작구 상도제1동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "서울특별시 동작구 노량진제2동",
@@ -2641,8 +2641,8 @@
   },
   {
     "name": "서울특별시 중랑구 면목제3.8동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "서울특별시 중랑구 면목제7동",
@@ -3671,8 +3671,8 @@
   },
   {
     "name": "서울특별시 중구 회현동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "서울특별시 중구 소공동",
@@ -12746,8 +12746,8 @@
   },
   {
     "name": "경기도 여주시",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경기도 여주시 오금동",
@@ -18951,8 +18951,8 @@
   },
   {
     "name": "경기도 용인시 처인구 역삼동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경기도 용인시 처인구 중앙동",
@@ -20571,8 +20571,8 @@
   },
   {
     "name": "경기도 고양시 일산서구 송산동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경기도 고양시 일산서구 송포동",
@@ -21591,8 +21591,8 @@
   },
   {
     "name": "경기도 평택시 고덕면 율포리",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경기도 평택시 고덕면 여염리",
@@ -22651,8 +22651,8 @@
   },
   {
     "name": "경기도 의정부시 의정부3동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경기도 의정부시 의정부2동",
@@ -34776,8 +34776,8 @@
   },
   {
     "name": "경상남도 창원시 마산합포구 노산동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경상남도 창원시 마산합포구 교방동",
@@ -35276,8 +35276,8 @@
   },
   {
     "name": "경상남도 창원시 의창구 용호동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경상남도 창원시 의창구 봉곡동",
@@ -35286,8 +35286,8 @@
   },
   {
     "name": "경상남도 창원시 의창구 신월동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경상남도 창원시 의창구 사림동",
@@ -35301,8 +35301,8 @@
   },
   {
     "name": "경상남도 창원시 의창구 대원동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경상남도 창원시 의창구 차용동",
@@ -35326,8 +35326,8 @@
   },
   {
     "name": "경상남도 창원시 의창구 반송동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경상남도 창원시 의창구 서곡동",
@@ -35341,13 +35341,13 @@
   },
   {
     "name": "경상남도 창원시 의창구 두대동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경상남도 창원시 의창구 삼동동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경상남도 창원시 의창구 용동",
@@ -35391,8 +35391,8 @@
   },
   {
     "name": "경상남도 창원시 의창구 용지동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경상남도 창원시 의창구 봉림동",
@@ -42316,8 +42316,8 @@
   },
   {
     "name": "경상북도 군위군 고로면 학암리",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경상북도 군위군 고로면 석산리",
@@ -47651,13 +47651,13 @@
   },
   {
     "name": "경상북도 구미시 공단2동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경상북도 구미시 공단1동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "경상북도 구미시 비산동",
@@ -55701,8 +55701,8 @@
   },
   {
     "name": "대구광역시 동구 안심3.4동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "대구광역시 동구 안심2동",
@@ -55896,8 +55896,8 @@
   },
   {
     "name": "대구광역시 중구 남성로",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "대구광역시 중구 하서동",
@@ -58011,8 +58011,8 @@
   },
   {
     "name": "부산광역시 금정구 장전제3동",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "부산광역시 금정구 장전제2동",
@@ -59841,8 +59841,8 @@
   },
   {
     "name": "세종특별자치시 금남면 집현리",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "세종특별자치시 금남면 도남리",
@@ -60081,13 +60081,13 @@
   },
   {
     "name": "세종특별자치시 연기면 해밀리",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "세종특별자치시 연기면 산울리",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "세종특별자치시 연기면 한별리",
@@ -100836,8 +100836,8 @@
   },
   {
     "name": "충청북도 진천군 문백면 구곡리",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0,
+    "longitude": 0
   },
   {
     "name": "충청북도 진천군 문백면 장월리",

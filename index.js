@@ -20,8 +20,8 @@ regions.map((region) => {
         }
         data.push({
             name,
-            latitude: Number(city.lat),
-            longitude: Number(city.lng),
+            latitude: city.lat==="undefined"?0:Number(city.lat),
+            longitude: city.lng==="undefined"?0:Number(city.lng),
         });
     });
 });
