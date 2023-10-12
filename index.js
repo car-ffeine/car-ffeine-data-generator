@@ -1,6 +1,7 @@
-const cities = require('./cities.json');
-const fs = require('fs');
-const regions = require('./regions.js');
+import cities from './cities.json' assert { type: 'json' };
+import {regions} from './regions.js';
+import {makeFile} from "./utils/makeFile.js";
+
 const data = [];
 regions.map((region) => {
     data.push(region);
@@ -26,15 +27,4 @@ regions.map((region) => {
     });
 });
 
-
-const jsonData = JSON.stringify(data, null, 2);
-
-const filename = 'data.json';
-
-fs.writeFile(filename, jsonData, 'utf8', (err) => {
-    if (err) {
-        console.error('파일 생성 실패:', err);
-    } else {
-        console.log('파일 생성!');
-    }
-});
+makeFile(data);

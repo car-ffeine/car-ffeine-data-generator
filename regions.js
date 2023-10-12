@@ -1,4 +1,4 @@
-const regions = [
+export const regions = [
     {
         name: '서울특별시',
         latitude: 37.5666103,
@@ -85,5 +85,3 @@ const regions = [
         longitude: 126.7051505,
     },
 ];
-
-module.exports = regions;
