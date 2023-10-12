@@ -1,5 +1,5 @@
 import {regions} from "../regions.js";
-import cities from "../cities.json" assert {type: "json"};
+import cities from "../assets/cities.json" assert {type: "json"};
 import {makeFile} from "../utils/makeFile.js";
 
 export const generateCityData = () => {
