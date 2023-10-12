@@ -10,7 +10,7 @@ export const makeFile = (data) => {
         if (err) {
             console.error('파일 생성 실패:', err);
         } else {
-            console.log('파일 생성!');
+            console.log('파일이 생성되었습니다!');
         }
     });
 }
