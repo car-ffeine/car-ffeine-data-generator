@@ -1,5 +1,6 @@
 import {generateCityData} from "./generators/city.js";
 import select, { Separator } from '@inquirer/select';
+import {generateStationData} from "./generators/station.js";
 
 const answer = await select({
     message: '어떤 데이터를 생성할까요?',
@@ -28,7 +29,7 @@ switch (answer) {
         generateCityData();
         break;
     case 'stations':
-        console.log('준비중입니다.');
+        generateStationData();
         break;
     default:
         console.log('준비중입니다.');
