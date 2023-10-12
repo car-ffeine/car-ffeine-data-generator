@@ -1,5 +1,6 @@
 import {getConnection} from "../utils/mysql.js";
 import {generateRandomData} from "../utils/generateRandomData.js";
+import {makeFile} from "../utils/makeFile.js";
 
 const stationMap = new Map();
 const chargerMap = new Map();
@@ -70,5 +71,5 @@ export const generateStationData = async () => {
   await makeStation();
   await addChargers();
   addChargersToStation();
-  console.log(stationMap.get("PW013287"));
+  makeFile(Array.from(stationMap.values()).filter(station => station.address.includes('강남구')));
 }
