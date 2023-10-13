@@ -71,5 +71,6 @@ export const generateStationData = async () => {
   await makeStation();
   await addChargers();
   addChargersToStation();
+  // TODO: 충전기 사용량 데이터 추가
   makeFile({data:Array.from(stationMap.values()), filename: 'real_station'});
 }
