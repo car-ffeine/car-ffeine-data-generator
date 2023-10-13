@@ -71,5 +71,5 @@ export const generateStationData = async () => {
   await makeStation();
   await addChargers();
   addChargersToStation();
-  makeFile(Array.from(stationMap.values()).filter(station => station.address.includes('강남구')));
+  makeFile({data:Array.from(stationMap.values()), filename: 'station'});
 }
