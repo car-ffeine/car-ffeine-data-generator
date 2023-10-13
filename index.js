@@ -1,36 +1,36 @@
 import {generateCityData} from "./generators/city.js";
 import select, { Separator } from '@inquirer/select';
 import {generateStationData} from "./generators/station.js";
+import colors from 'colors';
 
-const answer = await select({
-    message: '어떤 데이터를 생성할까요?',
-    choices: [
-        {
-            name: '도시 생성기',
-            value: 'city',
-            description: '도시 데이터를 생성합니다.',
-        },
-        {
-            name: '충전소 종합 정보 생성기',
-            value: 'stations',
-            description: '충전소 + 충전기의 종합 정보를 생성합니다.',
-        },
-        new Separator(),
-        {
-            name: '준비중',
-            value: 'no',
-            disabled: '(준비중인 메뉴입니다)',
-        },
-    ],
-});
+while(true){
 
-switch (answer) {
-    case 'city':
-        generateCityData();
-        break;
-    case 'stations':
-        generateStationData();
-        break;
-    default:
-        console.log('준비중입니다.');
+    const answer = await select({
+        message: '무엇을 할까요?',
+        choices: [
+            {
+                name: '도시 데이터를 생성한다.',
+                value: 'city',
+            },
+            {
+                name: 'msw용 충전소/충전기 통합 정보를 생성한다',
+                value: 'stations',
+            },
+            new Separator(),
+        ],
+    });
+
+    console.log('***** 잠시만 기다려주세요... *****'.yellow)
+
+    switch (answer) {
+        case 'city':
+            await generateCityData();
+            break;
+        case 'stations':
+            await generateStationData();
+            break;
+        default:
+            console.log('준비중입니다.');
+    }
+
 }
