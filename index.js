@@ -6,7 +6,7 @@ import colors from 'colors';
 while(true){
 
     const answer = await select({
-        message: '무엇을 할까요?',
+        message: '무엇을 할까요? (방향키 + 엔터로 선택하세요)',
         choices: [
             {
                 name: '도시 데이터를 생성한다.',
