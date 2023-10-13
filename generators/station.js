@@ -41,18 +41,18 @@ const addChargers = async () => {
         AND charger.station_id = charger_status.station_id
     `);
   for(const charger of chargersRow) {
+    const newCharger = {
+      type: charger.type,
+      price: charger.price,
+      capacity: Number(charger.capacity),
+      latestUpdateTime: charger.latest_update_time,
+      state: charger.charger_condition,
+      method: charger.method,
+    }
     if(chargerMap.has(charger.station_id)) {
-      const newCharger = {
-        type: charger.type,
-        price: charger.price,
-        capacity: Number(charger.capacity),
-        latestUpdateTime: charger.latest_update_time,
-        state: charger.charger_condition,
-        method: charger.method,
-      }
       chargerMap.get(charger.station_id).push(newCharger);
     } else {
-      chargerMap.set(charger.station_id, [charger]);
+      chargerMap.set(charger.station_id, [newCharger]);
     }
   }
 }
@@ -71,5 +71,5 @@ export const generateStationData = async () => {
   await makeStation();
   await addChargers();
   addChargersToStation();
-  makeFile({data:Array.from(stationMap.values()), filename: 'station'});
+  makeFile({data:Array.from(stationMap.values()), filename: 'real_station'});
 }

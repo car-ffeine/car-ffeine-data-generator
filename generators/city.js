@@ -28,5 +28,5 @@ export const generateCityData = () => {
         });
     });
 
-    makeFile({data, filename: 'city'});
+    makeFile({data, filename: 'real_city'});
 }

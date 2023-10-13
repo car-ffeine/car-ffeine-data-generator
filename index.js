@@ -17,6 +17,10 @@ while(true){
                 value: 'stations',
             },
             new Separator(),
+            {
+                name: '프로그램을 종료한다',
+                value: 'bye',
+            },
         ],
     });
 
@@ -28,6 +32,10 @@ while(true){
             break;
         case 'stations':
             await generateStationData();
+            break;
+        case 'bye':
+            console.log('프로그램을 종료합니다.'.red);
+            process.exit(1);
             break;
         default:
             console.log('준비중입니다.');
