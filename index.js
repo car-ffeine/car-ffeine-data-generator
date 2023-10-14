@@ -16,6 +16,10 @@ while(true){
                 name: 'msw용 충전소/충전기 통합 정보를 생성한다',
                 value: 'stations',
             },
+            {
+                name: 'msw용 충전소/충전기 통합 정보를 쪼개서 생성한다',
+                value: 'stations_split',
+            },
             new Separator(),
             {
                 name: '프로그램을 종료한다',
@@ -32,6 +36,25 @@ while(true){
             break;
         case 'stations':
             await generateStationData();
+            break;
+        case 'stations_split':
+            await generateStationData('seoul');
+            await generateStationData('incheon');
+            await generateStationData('gwangju');
+            await generateStationData('daegu');
+            await generateStationData('ulsan');
+            await generateStationData('daejeon');
+            await generateStationData('busan');
+            await generateStationData('gyeonggi');
+            await generateStationData('gangwon');
+            await generateStationData('chungnam');
+            await generateStationData('chungbuk');
+            await generateStationData('gyeongbuk');
+            await generateStationData('gyeongnam');
+            await generateStationData('jeonbuk');
+            await generateStationData('jeonnam');
+            await generateStationData('jeju');
+
             break;
         case 'bye':
             console.log('프로그램을 종료합니다.'.red);

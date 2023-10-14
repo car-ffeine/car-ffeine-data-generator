@@ -41,6 +41,10 @@ const addChargers = async () => {
         AND charger.station_id = charger_status.station_id
     `);
   for(const charger of chargersRow) {
+    chargerMap.set(charger.station_id, []);
+  }
+
+  for(const charger of chargersRow) {
     const newCharger = {
       type: charger.type,
       price: charger.price,
@@ -49,11 +53,7 @@ const addChargers = async () => {
       state: charger.charger_condition,
       method: charger.method,
     }
-    if(chargerMap.has(charger.station_id)) {
-      chargerMap.get(charger.station_id).push(newCharger);
-    } else {
-      chargerMap.set(charger.station_id, [newCharger]);
-    }
+    chargerMap.get(charger.station_id).push(newCharger);
   }
 }
 
@@ -67,10 +67,56 @@ const addChargersToStation = () => {
   }
 }
 
-export const generateStationData = async () => {
+export const getRegionName = (regionName) => {
+  switch (regionName) {
+    case 'seoul':
+      return '서울특별시';
+    case 'incheon':
+      return '인천광역시';
+    case 'gwangju':
+      return '광주광역시';
+    case 'daegu':
+      return '대구광역시';
+    case 'ulsan':
+      return '울산광역시';
+    case 'daejeon':
+      return '대전광역시';
+    case 'busan':
+      return '부산광역시';
+    case 'gyeonggi':
+      return '경기도';
+    case 'gangwon':
+      return '강원특별자치도';
+    case 'chungnam':
+      return '충청남도';
+    case 'chungbuk':
+      return '충청북도';
+    case 'gyeongbuk':
+      return '경상북도';
+    case 'gyeongnam':
+      return '경상남도';
+    case 'jeonbuk':
+      return '전라북도';
+    case 'jeonnam':
+      return '전라남도';
+    case 'jeju':
+      return '제주특별자치도';
+    default:
+      return undefined;
+  }
+};
+
+export const generateStationData = async (region) => {
   await makeStation();
   await addChargers();
   addChargersToStation();
   // TODO: 충전기 사용량 데이터 추가
-  makeFile({data:Array.from(stationMap.values()), filename: 'real_station'});
+  const stationData = Array.from(stationMap.values());
+  if(region) {
+    const filteredStationData = stationData.filter(station => station.address.includes(getRegionName(region)));
+    makeFile({data: filteredStationData, filename: `real_station_${region}`});
+  }
+  else {
+    makeFile({data: stationData, filename: 'real_station'});
+  }
 }
