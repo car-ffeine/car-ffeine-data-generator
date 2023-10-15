@@ -62,7 +62,7 @@ const addChargersToStation = () => {
     const station = stationMap.get(stationId);
     station.chargers = chargers;
     station.totalCount = chargers.length;
-    station.availableCount = chargers.filter(charger => charger.charger_condition === 'STANDBY').length;
+    station.availableCount = chargers.filter(charger => charger.state === 'STANDBY').length;
     station.quickChargerCount = chargers.filter(charger => Number(charger.capacity) >= 50).length;
   }
 }
@@ -119,4 +119,5 @@ export const generateStationData = async (region) => {
   else {
     makeFile({data: stationData, filename: 'real_station'});
   }
+
 }
